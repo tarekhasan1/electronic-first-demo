@@ -1,0 +1,22 @@
+@import './mixins';
+@import './variables';
+@import './navbar.scss';
+
+
+body {
+    background-color: gray;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header-container {
+    height: 70vh;
+    background: url("../src/images/starfield-image-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0,100% 0,100% 100%, -100% 85%);
+}
+
+h1{
+    text-align: center;
+}
