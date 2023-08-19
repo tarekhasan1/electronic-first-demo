@@ -42,6 +42,7 @@
 }
 
 .menu-2 a {
+    
     text-decoration: none;
     font-size: 18px;
     margin-right: 20px;
@@ -71,4 +72,16 @@
     margin: 0 auto;
     padding-top: 22px;
     width: 24px;
+}
+
+#search-field {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    background: linear-gradient(to right, orange, yellow);
+    padding: 18px 0px;
+    border-radius: 30px;
 }
