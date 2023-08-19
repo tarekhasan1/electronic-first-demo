@@ -1,19 +1,16 @@
-import './scss/main.scss';
+import "./scss/main.scss";
 
+const logo = "./src/images/header_logo_dark_1681808133_643e5b05223c4.webp";
+const cart = "./src/images/icons8-cart-58.png";
+const profile = "./src/images/icons8-user-50.png";
+const search = "./src/images/icons8-search-50.png";
+const pc = "./src/images/icons8-pc.gif";
+const xbox = "./src/images/icons8-xbox-50.png";
+const playstation = "./src/images/icons8-playstation-50.png";
+const nintendo = "./src/images/icons8-nintendo-30.png";
+const down = "./src/images/icons8-down-arrow-30.png";
 
-const logo = './src/images/header_logo_dark_1681808133_643e5b05223c4.webp';
-const cart = './src/images/icons8-cart-58.png';
-const profile = './src/images/icons8-user-50.png';
-const search = './src/images/icons8-search-50.png';
-const pc = './src/images/icons8-pc.gif';
-const xbox = './src/images/icons8-xbox-50.png';
-const playstation = './src/images/icons8-playstation-50.png';
-const nintendo = './src/images/icons8-nintendo-30.png';
-const down = './src/images/icons8-down-arrow-30.png';
-const banner = './src/images/starfield-mobile.png';
-
-
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div  class="header-container">
   <nav>
   <div class="navbar">
@@ -41,5 +38,22 @@ document.querySelector('#app').innerHTML = `
       </div>
   </div>
 </nav>
+
+<div class="banner">
+<div class="banner-content">
+<div class="heading">
+<p>in 15 days</p>
+</div>
+  <h1>Starfield Digital Premium</h1>
+  <h1>Edition + Early Access</h1>
+  <div class="pricing">
+    <p class="discount">-25%</p>
+    <h1>79.89$</h1>
+</div>
+</div>
+<div class="offer-section">
+  <div class="early-access"><div class="early-access-inside">+Early Access</div></div>
+</div>
+</div>
   </div>
-`
+`;
