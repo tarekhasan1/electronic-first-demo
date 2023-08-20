@@ -1,13 +1,17 @@
-@import './mixins';
 @import './variables';
 @import './navbar.scss';
 @import './banner.scss';
+@import './trending.scss';
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: gray;
-    margin: 0 auto;
-    box-sizing: border-box;
+    background-color: $background-color;
 }
 
 .header-container {
@@ -16,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(0 0,100% 0,100% 100%, -100% 85%);
+    overflow: hidden;
 }
 
 h1{
