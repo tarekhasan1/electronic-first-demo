@@ -1,14 +1,13 @@
 import "./scss/main.scss";
 
-const logo = "./src/images/header_logo_dark_1681808133_643e5b05223c4.webp";
-const cart = "./src/images/icons8-cart-64.png";
-const profile = "./src/images/icons8-user-50 (1).png";
-const search = "./src/images/icons8-search-50.png";
-const pc = "./src/images/icons8-pc-50.png";
-const xbox = "./src/images/icons8-xbox-50.png";
-const playstation = "./src/images/icons8-playstation-50.png";
-const nintendo = "./src/images/icons8-nintendo-50.png";
-const down = "./src/images/icons8-chevron-24.png";
+const cart = "/images/icons8-cart-64.png";
+const profile = "/images/icons8-user-50 (1).png";
+const search = "/images/icons8-search-50.png";
+const pc = "/images/icons8-pc-50.png";
+const xbox = "/images/icons8-xbox-50.png";
+const playstation = "/images/icons8-playstation-50.png";
+const nintendo = "/images/icons8-nintendo-50.png";
+const down = "/images/icons8-chevron-24.png";
 
 const data = [
   {
@@ -114,7 +113,7 @@ document.querySelector("#app").innerHTML = `
         <div class="navbar">
           <div class="nav-section-1">
             <button id="menu-btn">☰</button>
-            <img class="logo" src="${logo}" alt="" />
+            <img class="logo" src="./images/header_logo_dark_1681808133_643e5b05223c4.webp" alt="" />
           </div>
           <div class="nav-section-2" id="nav-menu">
             <div class="menu-1">
