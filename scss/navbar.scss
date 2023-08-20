@@ -64,7 +64,7 @@
 
                 li {
                     cursor: pointer;
-                    color: #fff;
+                    color: $primary-text-color;
                     position: relative;
                     img {
                         width: 14px;
@@ -127,6 +127,7 @@
             position: absolute;
             top: 60px;
             left: 0;
+            z-index: 99999999;
             .menu-1 {
                 flex-direction: column;
                 gap: 15px;

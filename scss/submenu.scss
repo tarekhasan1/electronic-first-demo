@@ -1,0 +1,121 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: $primary-text-color;
+  overflow: scroll;
+
+  &-content {
+    background: linear-gradient(to right, #95cbe8, #a98255);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    @media screen and (max-width: 768px) {
+        top: 70%;
+    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    width: 600px;
+    text-align: center;
+  }
+
+  .first-section {
+    height: 60%;
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      background-color: $background-color;
+      padding: 5px;
+      border-radius: 8px;
+      padding-left: 10px;
+      button {
+        border: none;
+        outline: none;
+        color: $primary-text-color;
+        background-color: transparent;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    .section-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: center;
+      .platform {
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        padding: 5px 10px;
+        transition: 0.3s;
+        align-items: center;
+        &:hover {
+          border-radius: 30px;
+          background-color: $background-color-light;
+          cursor: pointer;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .second-section {
+    height: 40%;
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      background-color: $background-color;
+      padding: 5px;
+      border-radius: 8px;
+      padding-left: 10px;
+      button {
+        border: none;
+        outline: none;
+        color: $primary-text-color;
+        background-color: transparent;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    .section-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        .prepaid-card {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 5px 10px;
+            transition: 0.3s;
+            align-items: center;
+            &:hover {
+                border-radius: 30px;
+                background-color: $background-color-light;
+                cursor: pointer;
+              }
+              img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+              }
+        }
+    }
+  }
+}
